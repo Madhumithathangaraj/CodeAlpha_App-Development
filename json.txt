@@ -1,0 +1,7 @@
+{
+  "lesson1": {
+    "question": "Translate 'apple' to Spanish",
+    "options": ["pera", "manzana", "naranja", "uva"],
+    "answer": "manzana"
+  }
+}
