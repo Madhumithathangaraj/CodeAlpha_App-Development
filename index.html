@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LingoLearn</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>LingoLearn</h1>
+    <nav>
+      <button onclick="showSection('flashcards')">Flashcards</button>
+      <button onclick="showSection('quiz')">Quiz</button>
+      <button onclick="showSection('progress')">Progress</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Flashcards Section -->
+    <section id="flashcards" class="section">
+      <h2>Daily Flashcard</h2>
+      <div class="card">
+        <p id="word">manzana</p>
+        <p id="translation">apple</p>
+        <button onclick="nextFlashcard()">Next</button>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section hidden">
+      <h2>Quiz</h2>
+      <p id="quiz-question">Translate 'apple' to Spanish:</p>
+      <div id="quiz-options"></div>
+      <p id="quiz-result"></p>
+    </section>
+
+    <!-- Progress Section -->
+    <section id="progress" class="section hidden">
+      <h2>Your Progress</h2>
+      <p>Lessons Completed: <span id="lessons-completed">0</span></p>
+      <p>Last Score: <span id="last-score">0</span></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
